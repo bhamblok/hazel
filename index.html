@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -7,7 +8,7 @@
   <link rel="manifest" href="/manifest.json">
   <script src="/app.js"></script>
   <!-- icon in the highest resolution we need it for -->
-  <link rel="icon" sizes="192x192" href="/icons/android-chrome-192x192.png">
+  <link rel="icon" sizes="192x192" href="/icons/icon-192.png">
   <!-- reuse same icon for Safari -->
   <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-touch-icon-76x76.png">
@@ -19,7 +20,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="theme-color" content="#FAD7A1">
 </head>
-<body>
+<body class="access">
 <div class="install install-android">
   <p>Klik hier om de app te installeren...</p>
   <button>INSTALL</button>
@@ -44,7 +45,7 @@
   <p>Loading</p>
 </div>
 <div class="grid">
-  <div id="playlist" class="content">
+  <!-- <div id="playlist" class="content">
     <h1>Muziek</h1>
     <p class="muziek-titel">Wiegenlied van Brahms</p>
     <audio controls src="/audio/wiegenlied.m4a"></audio>
@@ -58,17 +59,19 @@
     <audio controls src="/audio/claire-de-lune.m4a"></audio>
     <p class="muziek-titel">Mondschein van Beethoven</p>
     <audio controls src="/audio/moonlight.m4a"></audio>
+  </div> -->
+  <div id="maries" class="content">
+    <h1>Maries</h1>
+    <div class="birthdate">
+      <div class="years"></div>
+      <div class="months"></div>
+      <div class="days"></div>
+      <div class="hours"></div>
+      <div class="minutes"></div>
+      <!-- <div class="seconds"></div> -->
+    </div>
   </div>
-  <div id="hulplijn" class="content">
-    <h1>Hulplijn</h1>
-  </div>
-  <div id="extra" class="content">
-    <h1>Extra</h1>
-    <iframe width="300" height="169" src="https://www.youtube.com/embed/wLFjYVN3dIo?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <a href="tel:+32-476-74-78-42" class="hulplijn">Bel een hulplijn</a>
-    <a href="mailto:post@bhamblok.be?subject=Babysit Hazel">Boek een babysit</a>  
-  </div>
-  <div id="home" class="content">
+  <div id="hazel" class="content">
     <h1>Hazel</h1>
     <div class="birthdate">
       <div class="years"></div>
@@ -79,9 +82,9 @@
       <!-- <div class="seconds"></div> -->
     </div>
   </div>
-  <a href="#home" class="nav nav-left">Hazel</a>
-  <a href="#playlist" class="nav nav-left-middle">Muziek</a>
-  <a href="#extra" class="nav nav-right">Extra</a>
+  <a href="#hazel" class="nav nav-left">Hazel</a>
+  <!-- <a href="#playlist" class="nav nav-left-middle">Muziek</a> -->
+  <a href="#maries" class="nav nav-right">Maries</a>
 </div>
 </body>
 </html>
