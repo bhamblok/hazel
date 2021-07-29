@@ -55,11 +55,11 @@ body {
   display: grid;
   width: 100vw;
   height: 100vh;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 80px;
   grid-template-areas:
-    "main main"
-    "left right";
+    "main main main"
+    "left center right";
 }
 .content {
   grid-area: main;
